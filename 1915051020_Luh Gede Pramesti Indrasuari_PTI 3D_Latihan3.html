@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistem Informasi Pendataan Karyawan</title>
+    <link rel="stylesheet" type="text/css" href="1915051020_Luh Gede Pramesti Indrasuari.css"> 
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="logo">
+    <img src="https://i.postimg.cc/4xStCXfv/Whats-App-Image-2020-09-17-at-16-19-14.jpg" width="100">
+</div>
+
+<nav class="nav">
+    <h1> Selamat Datang Pada Sistem Update Pegawai</h1>
+    <ul>
+        <li><a href="#logout">Logout</a></li>
+    </ul>
+</nav>
+</header>
+<div class="wrapper">
+<aside class="sidebar">
+    <div style="padding: 10px;">
+        <b>Menu</b><br>
+        <hr>
+        <a href="#www.biodatapegawai.com/home">Home</a><br/>
+        <a href="#file:///D:/KULIAH/SMT%203/PEMROGRAMAN%20WEB/identitas%20diri.html">Biodata</a><br/>
+        <a href="#www.biodatapegawai.com/updatebiodata">Update Biodata</a><br/>
+        <a href="#www.biodatapegawai.com/contactperson">Contact Person</a><br/>
+    </div>
+</aside>
+
+<main class="content">
+    <div style="padding: 10px;">
+        <h3 styel="margin: 0px">Update Biodata Pegawai</h3>
+        <hr/>
+        <form action="formulir.php" method="post" onSubmit="return ValidasiForm()" name="formReg">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>: </td>
+                    <td>
+                        <input type="text" name="Nama" value="" placeholder="Masukan Nama Lengkap"/</td>
+                </tr>
+                <tr>
+                    <td>Sandi</td>
+                    <td>: </td>
+                    <td>
+                        <input type="password" password="Sandi" value="" placeholder="Masukan Kata Sandi"/</td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jenis_kelamin" value="laki Laki"/>Laki Laki
+                        <input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>: </td>
+                    <td>
+                        <input type="checkbox" name="hobi_mendengarkan lagu"/>Mendengarkan lagu
+                        <input type="checkbox" name="hobi_memasak"/>Memasak
+                        <input type="checkbox" name="hobi_shopping"/>Shopping
+                        <input type="checkbox" name="hobi_menari"/>Menari
+                        <input type="checkbox" name="hobi_melukis"/>Melukis
+                        <input type="checkbox" name="hobi_lain"/>
+                        <td><input type="text" name="Hobi Lain" value="" placeholder="Hobi Lain"/></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asal Kota</td>
+                    <td>: </td>
+                    <td>
+                        <td><select name="daerah_asal">
+                        <option value="Denpasar">Denpasar</option>
+                        <option value="Buleleng">Buleleng</option>
+                        <option value="Karangase">Karangasem</option>
+                        <option value="Bangli">Bangli</option>
+                        <option value="Klungkung" selected>Klungkung</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Komentar</td>
+                    <td>: </td>
+                    <td><textarea name="komentar" rows="5" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right"><input type="submit" value="Simpan"></td>
+                </tr>
+            </table>
+        </form>
+       </div>
+    </main>
+   </div>
+<footer class="footer">
+    <font color="white">Copyright Undiksha 2020</font>
+</footer>  
+</div>
+</body>
+</html>
